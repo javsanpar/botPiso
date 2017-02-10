@@ -1,5 +1,7 @@
 require 'telegram/bot'
 
+Process.daemon(nochdir=true)
+
 token = IO.read("myToken.txt").strip #Change this
 
 Telegram::Bot::Client.run(token) do |bot|
