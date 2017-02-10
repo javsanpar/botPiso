@@ -1,4 +1,4 @@
-value = %x( nmap -sP -n 192.168.1.0/24 )
+value = %x( ./loopNmap.sh )
 
 knownMacs = Hash.new
 macs = Array.new
