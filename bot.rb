@@ -1,6 +1,6 @@
 require 'telegram/bot'
 
-token = IO.read("myToken.txt") #Change this
+token = IO.read("myToken.txt").strip #Change this
 
 Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|
