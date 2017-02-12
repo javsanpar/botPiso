@@ -16,7 +16,10 @@ value.each do |i|
 end
 
 knownMacs.each do |key,value|
-	if macs.include? value
-		puts(key)
-	end
+  value.each do |mac|
+	  if macs.include? mac
+	  	puts(key)
+      break
+    end
+  end
 end
