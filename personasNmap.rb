@@ -17,7 +17,7 @@ end
 
 knownMacs.each do |key,value|
   value.each do |mac|
-	  if macs.include? value
+	  if macs.include? mac
 	  	puts(key)
       break
     end
